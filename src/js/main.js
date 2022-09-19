@@ -1,26 +1,18 @@
 // DOM Address to run handel events
-const form = document.querySelector('.form');
-const title = document.querySelector('.book-title');
-const author = document.querySelector('.book-author');
-const listContainer = document.querySelector('.books-list');
+const form = document.querySelector('form');
+const title = document.getElementById('bookTitle');
+const author = document.getElementById('bookAuthor');
+const listContainer = document.querySelector('.booksList');
 let books = [];
 
-
-// Object Constructor function
-function Book(title, author) {
-  this.title;
-  this.author;
-}
-
-
 // a function to create items template
-function createBook({ title, author }) {
+function createElem({ title, author }) {
   return `
-        <li class="list-item">
+        <div class="list-item">
             <span>${title}</span>
             <span>${author}</span>
             <button class="remove-button">Remove</button>
-        </li>`;
+        </div>`;
 }
 
 // Check for available data at local storage and displaying them
@@ -29,7 +21,7 @@ function checkStorage() {
   if (storage) {
     books = JSON.parse(storage);
     books.forEach((item) => {
-      listContainer.innerHTML += createBook(item);
+      listContainer.innerHTML += createElem(item);
     });
     const removeBtn = document.querySelectorAll('.remove-button');
     removeBtn.forEach((e, i) => {
@@ -40,6 +32,12 @@ function checkStorage() {
       });
     });
   }
+}
+
+// Object Constructor function
+function Book(title, author) {
+  this.title = title;
+  this.author = author;
 }
 
 // Load the data in the local storage
