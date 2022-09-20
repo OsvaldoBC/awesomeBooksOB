@@ -1,4 +1,4 @@
-/* Box sizing rules */
+/* Box sizing rules
 *,
 *::before,
 *::after {
@@ -32,9 +32,9 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  /* min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.5; */
 }
 
 /* A elements that don't have a class get default styles */
@@ -85,7 +85,7 @@ main {
 }
 
 .card {
-  display: flex;
+  display:column;
   flex: 1;
   max-width: 700px;
   padding: 1rem;
@@ -151,4 +151,4 @@ main {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
-}
+} */
