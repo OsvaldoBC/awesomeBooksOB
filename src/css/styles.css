@@ -73,17 +73,82 @@ select {
   }
 }
 
-/* General styling */
-.mainCard {
-  height: 100vh;
-}
-
 main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.mainCard {
+  display: flex;
+  height: 100vh;
+}
+
 .card {
-  max-width: 600px;
+  display: flex;
+  flex: 1;
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.table {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-inline: 1rem;
+  margin-block: 1rem;
+  border: 2px solid gray;
+  text-align: center;
+
+}
+
+
+.textCenter {
+  text-align: center;
+}
+
+.primaryHeader {
+  font-size: calc(2rem + 0.5vw);
+}
+
+.secondaryHeader {
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+.border {
+  border: 2px solid gray;
+}
+/* General styling */
+
+.dataForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputForm {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  margin-inline: auto;
+  padding: 0.25rem 2rem;
+}
+
+.thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
