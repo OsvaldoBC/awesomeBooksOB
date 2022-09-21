@@ -98,10 +98,9 @@ main {
   margin-inline: 1rem;
   margin-block: 1rem;
   border: 2px solid gray;
-  text-align: center;
+  text-align: left;
 
 }
-
 
 .textCenter {
   text-align: center;
@@ -147,8 +146,33 @@ main {
   padding: 0.25rem 2rem;
 }
 
-.thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-} */
+ul li {
+  list-style: none;
+}
+
+.book-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.book-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.by {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+.author {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+.id {
+  margin: 0 0.7rem 0 0.7rem;
+}

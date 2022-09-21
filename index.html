@@ -15,9 +15,9 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>NO</th>
                         <th>Title</th>
                         <th>Author</th>
+                        <th>NO</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -28,10 +28,13 @@
 
           <div class="dataForm">
              <h2 class="textCenter secondaryHeader">Add a new book</h2>
-               <form action="javascript:void(0)" method="post">
-                 <input type="text" required minlength="3" id="bookTitle" placeholder="Title">
-                 <input type="text" required minlength="3" id="bookAuthor" placeholder="Author">
-                  <button type="submit">Add</button>
+               <form id ="book-form">
+                 <p class="add-book">Add a new book</p>
+                 <input class="insertion" type="text" required minlength="3" id="bookTitle" placeholder="Title">
+                 <input class="insertion-point" type="text" required minlength="3" id="bookAuthor" placeholder="Author">
+                 <div class="sub-btn">
+                     <button class="submit-btn">Add</button>
+                 </div>
              </form>
            </div>
         </section>
