@@ -5,23 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    <main class="mainCard">
+    <main>
+      <div class="mainCard">
         <section class="card" aria-labelledby="projectName">
-            <h1 id="projectName">
-                Awesome Books
-            </h1>
-            <div class="booksList">
+          <h1 id="projectName" class="textCenter primaryHeader">All Awesome Books</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody class="booksList">
+                    <!-- Books list will be appended here -->
+                </tbody>
+            </table>
+
+          <div class="dataForm">
+             <h2 class="textCenter secondaryHeader">Add a new book</h2>
+               <form id ="book-form">
+                 <p class="add-book">Add a new book</p>
+                 <input class="insertion" type="text" required minlength="3" id="bookTitle" placeholder="Title">
+                 <input class="insertion-point" type="text" required minlength="3" id="bookAuthor" placeholder="Author">
+                 <div class="sub-btn">
+                     <button class="submit-btn">Add</button>
+                 </div>
+             </form>
            </div>
-           <div class="dataForm">
-              <form action="javascript:void(0)" method="post">
-                <input type="text" name="title" id="bookTitle" placeholder="Book Title">
-                <input type="text" name="author" id="bookAuthor" placeholder="Book Author">
-                <button type="submit">Add</button>
-            </form>
-          </div>
         </section>
+      </div>
     </main>
     <script src="./src/js/main.js"></script>
 </body>

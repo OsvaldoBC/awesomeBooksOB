@@ -1,4 +1,4 @@
-/* Box sizing rules */
+/* Box sizing rules
 *,
 *::before,
 *::after {
@@ -32,9 +32,9 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  /* min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.5; */
 }
 
 /* A elements that don't have a class get default styles */
@@ -73,17 +73,105 @@ select {
   }
 }
 
-/* General styling */
-.mainCard {
-  height: 100vh;
-}
-
 main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.mainCard {
+  display: flex;
+  height: 100vh;
+}
+
 .card {
-  max-width: 600px;
+  flex: 1;
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.table {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-inline: 1rem;
+  margin-block: 1rem;
+  border: 2px solid gray;
+  text-align: left;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.primaryHeader {
+  font-size: calc(2rem + 0.5vw);
+}
+
+.secondaryHeader {
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+.border {
+  border: 2px solid gray;
+}
+
+/* General styling */
+
+.dataForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputForm {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  margin-inline: auto;
+  padding: 0.25rem 2rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.book-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.book-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.by {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+.author {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+.id {
+  margin: 0 0.7rem 0 0.7rem;
 }
