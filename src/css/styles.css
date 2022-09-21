@@ -192,7 +192,6 @@ nav {
   border-radius: 5px;
 }
 
-
 .nav-list {
   display: flex;
   list-style: none;
@@ -207,12 +206,10 @@ nav {
   margin-left: 20px;
 }
 
-
 .link {
   text-decoration: none;
   color: black;
 }
-
 
 .link:hover {
   color: rgb(96, 59, 231);
@@ -256,7 +253,6 @@ footer {
   margin-top: 1.5rem;
   line-height: 1.5rem;
 }
-
 
 .dataForm {
   display: none;
