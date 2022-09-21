@@ -118,13 +118,6 @@ main {
 
 /* General styling */
 
-.dataForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .form {
   width: 100%;
   max-width: 400px;
@@ -235,7 +228,7 @@ footer {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-   align-items: center;
+  align-items: center;
   bottom: 20px;
 }
 
@@ -259,7 +252,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;;
+  margin-top: 1.5rem;
 }
 
 .contentList {
