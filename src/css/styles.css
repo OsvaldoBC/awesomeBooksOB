@@ -85,7 +85,7 @@ main {
 }
 
 .card {
-  display:column;
+  display: flex;
   flex: 1;
   max-width: 700px;
   padding: 1rem;
@@ -99,7 +99,6 @@ main {
   margin-block: 1rem;
   border: 2px solid gray;
   text-align: left;
-
 }
 
 .textCenter {
@@ -117,6 +116,7 @@ main {
 .border {
   border: 2px solid gray;
 }
+
 /* General styling */
 
 .dataForm {
