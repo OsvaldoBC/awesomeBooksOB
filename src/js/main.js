@@ -108,6 +108,8 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   UI.clearFields();
 });
 
+// -------------------------------------------------------------------//
+
 // Event: Remove a book
 document.querySelector('.booksList').addEventListener('click', (e) => {
   const id = document.querySelector('.id');
@@ -119,17 +121,32 @@ document.querySelector('.booksList').addEventListener('click', (e) => {
   store.removeBook(id.textContent);
 });
 
+function date() {
+  const dt = new Date();
+  document.getElementById('date-time').innerHTML = dt.toLocaleString('en-US');
+}
 
- const showContact = document.querySelector('.contact');
-  const showForm = document.querySelector('.dataForm');
-  const showBook = document.querySelector('.table');
-  const showMain = document.querySelector('.card');
+date();
+setInterval(date, 1000);
 
-showContact.addEventListener('click', () => {
-  showContact.style.display = 'block';
-  showBook.style.display = 'none';
-  showForm.style.display = 'none';
-  showMain.style.display ='none';
+const list = document.getElementById('list');
+const book = document.getElementById('book');
+const contact = document.getElementById('contact');
 
-  console.log('contact');
+list.addEventListener('click', () => {
+  document.querySelector('.contentList').style.display = 'flex';
+  document.querySelector('.dataForm').style.display = 'none';
+  document.querySelector('.contact').style.display = 'none';
+});
+
+book.addEventListener('click', () => {
+  document.querySelector('.contentList').style.display = 'none';
+  document.querySelector('.dataForm').style.display = 'flex';
+  document.querySelector('.contact').style.display = 'none';
+});
+
+contact.addEventListener('click', () => {
+  document.querySelector('.contentList').style.display = 'none';
+  document.querySelector('.dataForm').style.display = 'none';
+  document.querySelector('.contact').style.display = 'flex';
 });

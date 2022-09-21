@@ -81,6 +81,7 @@ main {
 .mainCard {
   display: flex;
   height: 100vh;
+  flex-direction: column;
 }
 
 .card {
@@ -177,7 +178,7 @@ ul li {
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -229,7 +230,6 @@ nav {
   padding: 3px;
 }
 
-
 footer {
   position: absolute;
   border: solid;
@@ -248,7 +248,28 @@ footer {
   font-weight: 600;
 }
 
-.contact{
+.contact {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-left: 30%;
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
+
+.dataForm {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }

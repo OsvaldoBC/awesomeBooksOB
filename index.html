@@ -16,20 +16,25 @@
           <div>
             <ul class="nav-list">
               <li class="lists">
-                <a class="link" href="#table" >Book list</a>
+                <a class="link" id="list" href="#table" >Book list</a>
               </li>
               <li class="lists">
-                <a class="link" href="#dataForm" >Add New</a>
+                <a class="link" id="book" href="#dataForm" >Add New</a>
               </li>
               <li class="lists-c">
-                <a class="link" href="#contact" >Contact</a>
+                <a class="link" id="contact" href="#contact" >Contact</a>
               </li>
             </ul>
           </div>
         </nav>
+        <div class="current-time">
+            <span id='date-time'></span>
+        </div>
       </header>
+
     <main>
       <div class="mainCard">
+        <div class="contentList">
         <section class="card" aria-labelledby="projectName">
           <h1 id="projectName" class="textCenter primaryHeader">All Awesome Books</h1>
             <table class="table" id="table">
@@ -41,7 +46,7 @@
                     <!-- Books list will be appended here -->
                 </tbody>
             </table>
-
+         </div>
           <div class="dataForm" id="dataForm">
              <h2 class="textCenter secondaryHeader">Add a new book</h2>
                <form id ="book-form">
@@ -54,7 +59,7 @@
              </form>
            </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact">
             <h2 class="title">Contact Information</h2>
             <p class="para">
                 Do you have any questions or just want to say "Hello"? <br />
