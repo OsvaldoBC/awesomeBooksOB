@@ -85,7 +85,7 @@ main {
 }
 
 .card {
-  display: flex;
+  /*display: flex;*/
   flex: 1;
   max-width: 700px;
   padding: 1rem;
