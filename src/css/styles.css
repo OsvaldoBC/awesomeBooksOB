@@ -74,7 +74,6 @@ select {
 }
 
 main {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -82,6 +81,7 @@ main {
 .mainCard {
   display: flex;
   height: 100vh;
+  flex-direction: column;
 }
 
 .card {
@@ -117,13 +117,6 @@ main {
 }
 
 /* General styling */
-
-.dataForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 .form {
   width: 100%;
@@ -174,4 +167,98 @@ ul li {
 
 .id {
   margin: 0 0.7rem 0 0.7rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  width: 98%;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: rgb(96, 59, 231);
+}
+
+.lists {
+  border-right: solid black 2px;
+  margin-right: 10px;
+  padding: 3px;
+  padding-right: 10px;
+}
+
+.lists-c {
+  margin-right: 10px;
+  padding: 3px;
+}
+
+footer {
+  position: absolute;
+  border: solid;
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 20px;
+}
+
+.footer-p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.dataForm {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }

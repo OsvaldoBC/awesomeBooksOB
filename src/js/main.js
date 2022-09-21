@@ -108,6 +108,8 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   UI.clearFields();
 });
 
+// -------------------------------------------------------------------//
+
 // Event: Remove a book
 document.querySelector('.booksList').addEventListener('click', (e) => {
   const id = document.querySelector('.id');
@@ -117,4 +119,34 @@ document.querySelector('.booksList').addEventListener('click', (e) => {
 
   // Remove from store
   store.removeBook(id.textContent);
+});
+
+function date() {
+  const dt = new Date();
+  document.getElementById('date-time').innerHTML = dt.toLocaleString('en-US');
+}
+
+date();
+setInterval(date, 1000);
+
+const list = document.getElementById('list');
+const book = document.getElementById('book');
+const contact = document.getElementById('contact');
+
+list.addEventListener('click', () => {
+  document.querySelector('.contentList').style.display = 'flex';
+  document.querySelector('.dataForm').style.display = 'none';
+  document.querySelector('.contact').style.display = 'none';
+});
+
+book.addEventListener('click', () => {
+  document.querySelector('.contentList').style.display = 'none';
+  document.querySelector('.dataForm').style.display = 'flex';
+  document.querySelector('.contact').style.display = 'none';
+});
+
+contact.addEventListener('click', () => {
+  document.querySelector('.contentList').style.display = 'none';
+  document.querySelector('.dataForm').style.display = 'none';
+  document.querySelector('.contact').style.display = 'flex';
 });
