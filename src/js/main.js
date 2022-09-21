@@ -118,3 +118,18 @@ document.querySelector('.booksList').addEventListener('click', (e) => {
   // Remove from store
   store.removeBook(id.textContent);
 });
+
+
+ const showContact = document.querySelector('.contact');
+  const showForm = document.querySelector('.dataForm');
+  const showBook = document.querySelector('.table');
+  const showMain = document.querySelector('.card');
+
+showContact.addEventListener('click', () => {
+  showContact.style.display = 'block';
+  showBook.style.display = 'none';
+  showForm.style.display = 'none';
+  showMain.style.display ='none';
+
+  console.log('contact');
+});

@@ -16,13 +16,13 @@
           <div>
             <ul class="nav-list">
               <li class="lists">
-                <a class="link" href="#" id="booksList">Book list</a>
+                <a class="link" href="#table" >Book list</a>
               </li>
               <li class="lists">
-                <a class="link" href="#" id="newBook">Add New</a>
+                <a class="link" href="#dataForm" >Add New</a>
               </li>
               <li class="lists-c">
-                <a class="link" href="#" id="Contact">Contact</a>
+                <a class="link" href="#contact" >Contact</a>
               </li>
             </ul>
           </div>
@@ -32,17 +32,17 @@
       <div class="mainCard">
         <section class="card" aria-labelledby="projectName">
           <h1 id="projectName" class="textCenter primaryHeader">All Awesome Books</h1>
-            <table class="table">
+            <table class="table" id="table">
                 <thead>
                     <tr>
                     </tr>
                 </thead>
-                <tbody class="booksList">
+                <tbody class="booksList" id="booksList">
                     <!-- Books list will be appended here -->
                 </tbody>
             </table>
 
-          <div class="dataForm">
+          <div class="dataForm" id="dataForm">
              <h2 class="textCenter secondaryHeader">Add a new book</h2>
                <form id ="book-form">
                  <p class="add-book">Add a new book</p>
@@ -54,13 +54,23 @@
              </form>
            </div>
         </section>
+        <section class="contact" id="contact">
+            <h2 class="title">Contact Information</h2>
+            <p class="para">
+                Do you have any questions or just want to say "Hello"? <br />
+                You can reach out to us!
+            </p>
+            <ul>
+                <li>Our Email: mail@mail.com</li>
+                <li>Our phone number: 5555555555</li>
+                <li>Our Address: Streetname, City, Country</li>
+            </ul>
+        </section>
       </div>
-
       <footer class="footer">
         <p class="footer-p">Copyright</p>
         <p class="footer-links"></p>
       </footer>
-
     </main>
     <script src="./src/js/main.js"></script>
 </body>

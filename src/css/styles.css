@@ -247,3 +247,8 @@ footer {
   font-size: 20px;
   font-weight: 600;
 }
+
+.contact{
+  align-items: center;
+  margin-left: 30%;
+}
