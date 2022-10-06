@@ -3,8 +3,7 @@ The purpose of this repository is practicing JavaScript Object Oriented Programm
 
 ## Live Demo
 
-[Live Demo Link](https://osvaldobc.github.io/trafficConferencePage/)
-
+[Live Demo Link](https://osvaldobc.github.io/awesomeBooksOB/)
 
 ## interactions
 
